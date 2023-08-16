@@ -1,0 +1,101 @@
+<head>
+    <title>Locations of MD</title>
+        <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #Logo{
+            padding-left: 25px;
+            height: 50px;
+            width: auto;
+            cursor: pointer;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            background-color: rgb(247, 127, 127);
+        }
+        .Nav_links{
+            list-style: none;
+
+        }
+        .Nav_links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .Nav_links li a{
+            transition: all 0.1s ease 0s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 1000;
+            color: #1f2020;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .Nav_links li a:hover{
+            color: aqua;
+        }
+        div.location{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            margin-top: 50px;
+        }
+        div.city_map{
+            border: 2px solid #ccc;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 20px;
+            transition: all 0.3s ease 0s;
+        }
+        div.city_map:hover{
+            border: 2px solid #1b1a1a;
+        }
+        div.map{
+            display: inline;
+        }
+        div.city{
+            padding: 15px;
+            text-align: center;
+            font-size: x-small;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Main.html"><img src="D.png" id="Logo" class="Logo" alt="Divaza"></a>
+        <nav>
+            <ul class="Nav_links">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="location.html">Location</a></li> 
+                <li><a href="signin.html">Sign In</a></li> 
+                <li><a href="signup.html">Sign Up</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <div class="location" id="location">
+        <div id="city_map" class="city_map">
+            <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410137.54363328737!2d77.58980134895242!3d13.181867161342858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a0f515d931%3A0xd726159651561cfa!2sDivaza%20Beauty%20Parlour!5e0!3m2!1sen!2sin!4v1692182527525!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="city" id="city">
+                <h1>Bengaluru</h1> 
+            </div>
+        </div>
+        <div id="city_map" class="city_map">
+            <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.1111996512107!2d77.03951247733802!3d28.511705512930835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19df7f4ce555%3A0x44b9ed776781c6ae!2sDivaza%20Makeup%20Studio!5e0!3m2!1sen!2sin!4v1692182727329!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="city" id="city">
+                <h1>Haryana</h1> 
+            </div>
+        </div>
+    </div>
+</body>

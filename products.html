@@ -1,0 +1,316 @@
+<head>
+    <title>Products of MD</title>
+        <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Logo{
+            padding-left: 25px;
+            height: 50px;
+            width: auto;
+            cursor: pointer;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            background-color: rgb(217, 217, 217);
+        }
+        .Nav_links{
+            list-style: none;
+
+        }
+        .Nav_links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .Nav_links li a{
+            transition: all 0.1s ease 0s;
+            font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 1000;
+            color: #1f2020;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .Nav_links li a:hover{
+            color: aqua;
+        }
+        img{
+            width: 200px;
+            height: auto;
+        }
+        div.products{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-items: center;
+        }
+        div.frame{
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 20px;
+            transition: all 0.3s ease 0s;
+        }
+        div.frame:hover{
+            border: 2px solid #1b1a1a;
+        }
+        div.polaroid{
+            align-items: center;
+        }
+        div.polaroid img {
+            width: 250px;
+            height: 225px;
+        }
+        div.h1{
+            padding: 15px;
+            text-align: center;
+            font-size: x-small;
+        }
+        div.heading{
+            margin-left: 55px;
+            margin-top: 20px;
+        }
+        div.disclaimer{
+            margin-left: 55px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Main.html"><img src="D.png" id="Logo" class="Logo" alt="Divaza"></a>
+        <nav>
+            <ul class="Nav_links">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="location.html">Location</a></li> 
+                <li><a href="signin.html">Sign In</a></li> 
+                <li><a href="signup.html">Sign Up</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <div id="heading" class="heading">
+        <h1>Products available are:</h1>
+    </div>
+
+    <div id="products" class="products">
+        <div id="frame" class="frame">
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="krtin.jpg" alt="keratin">
+                </div>
+                <div id="h1" class="h1">
+                    <h1> Keratin</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="scalp.png" alt="Scalp Treatment">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Scalp Treatment</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="spa.jpg" alt="hair spa">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Hair Spa</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="layer.jpg" alt="Layer Cut">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Layer Cut</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="wavy.jpg" alt="waves">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Waves</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="bob.jpg" alt="Classic Bob">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Classic Bob</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="pixie.jpg" alt="Pixie cut">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Pixie Cut</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="clr.jpg" alt="Coloring">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Coloring</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="oil.jpg" alt="Hot oil Hair treatment">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Hot oil Hair treatment</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="hydra.jpg" alt="Hydrafacial">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Hydrafacial</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="micro.jpg" alt="Microneedling">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Microneedling</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="waxing.jpg" alt="Waxing">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Waxing</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="pm.jpg" alt="Permanent makeup">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Permanent makeup</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="clp.jpg" alt="Carbon Laser Peel">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Carbon Laser Peel</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="df.jpg" alt="Derma Fillers">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Derma Fillers</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="mda.jpg" alt="Microderma Abrasion">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Microderma Abrasion</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="pedicur.jpg" alt="Pedicure">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Pedicure</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame" class="frame">    
+            <div class="polaroid" id="polaroid">
+                <div class="img" id="img">
+                    <img src="brght.jpg" alt="Gold facial">
+                </div>
+                <div id="h1" class="h1">
+                    <h1>Gold Facial</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="disclaimer" class="disclaimer">
+        <h1>Book Appointment</h1>
+        <p>please contact us directly :)</p>
+        <br>
+        <a href="contact.html"><p>Contact us here</p></a>
+        <br><br><br><br><br>
+    </div>
+</body>            

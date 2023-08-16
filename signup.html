@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="download.png">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: #EEEBDD;
+        }
+
+        #Logo{
+            padding-left: 25px;
+            height: 50px;
+            width: auto;
+            cursor: pointer;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10px;
+            border: 1px solid black;
+        }
+        .Nav_links{
+            list-style: none;
+
+        }
+        .Nav_links li{
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        .Nav_links li a{
+            transition: all 0.1s ease 0s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 1000;
+            color: #1f2020;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .Nav_links li a:hover{
+            color: #FF2E63;
+        }
+        #signin{
+            border: 1px solid #1f2020; 
+            padding: 8px 10px; 
+            padding-bottom: 11px;
+            border-radius: 15px;
+        }
+        #signup{
+            border: 1px solid #1f2020; 
+            padding: 8px 10px; 
+            padding-bottom: 11px;
+            border-radius: 15px;
+        }
+        #signin:hover{
+            border: 1px solid #FF2E63; 
+        }
+        #signup:hover{
+            border: 1px solid #FF2E63; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form {
+            width: 300px;
+            text-align: center;
+        }
+
+        .form h2 {
+            margin-bottom: 10px;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="signup-form" class="form" action="signup.php" method="POST">
+                <h2>Sign Up</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <br>
+                <br>
+                Already have an account? <a href="signin.html">Login here</a>
+                <br>
+                <br>
+                Continue without login? <a href="Main.html">Go to main page.</a>
+            </form>
+        </div>
+    </div>
+</body>
